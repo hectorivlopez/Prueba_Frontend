@@ -56,6 +56,9 @@ const mail_list = (state = default_mail_list, action) => {
 						spam: newSpam
 					}
 				}
+				else {
+					return state
+				}
 			}
 			break;
 
@@ -69,6 +72,9 @@ const mail_list = (state = default_mail_list, action) => {
 					trash: state.trash,
 					spam: [...state.spam, action.payload]
 				}
+			}
+			else {
+				return state
 			}
 			break;
 			
