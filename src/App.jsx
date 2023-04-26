@@ -20,7 +20,7 @@ const App = () => {
 			}
 			dispatch(new_mail_action(newMail))
 		})
-	}, 5000)
+	}, 90000)
 
 	return (
 		<div className='main'>
